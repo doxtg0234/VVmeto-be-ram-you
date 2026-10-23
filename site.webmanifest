@@ -1,0 +1,9 @@
+{
+  "name": "7Anime",
+  "short_name": "7Anime",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#070812",
+  "theme_color": "#070812",
+  "icons": []
+}
