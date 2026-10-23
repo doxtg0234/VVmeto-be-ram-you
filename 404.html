@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found | 7Anime</title>
+<meta name="description" content="Oops! This page couldn't be found. Return to 7Anime and discover your next anime.">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#070812">
+<link rel="icon" href="fav.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.error-page{min-height:100svh;display:flex;flex-direction:column;position:relative;isolation:isolate;overflow:hidden}
+.error-nav{width:100%;padding:26px 0;position:relative;z-index:2}.error-nav .container{display:flex;justify-content:center}
+.error-main{flex:1;display:grid;place-items:center;text-align:center;padding:28px 18px 76px;position:relative;z-index:1}
+.error-content{max-width:680px;width:100%}.error-art{position:relative;width:min(100%,470px);height:235px;margin:0 auto 10px;display:grid;place-items:center}
+.error-number{font:900 clamp(112px,24vw,205px)/.8 Outfit,sans-serif;letter-spacing:-.09em;background:linear-gradient(135deg,#fff 12%,#b9a8ff 45%,#62eaff 78%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 36px rgba(124,92,255,.22));position:relative;z-index:1}
+.error-planet{position:absolute;width:92px;height:92px;border-radius:50%;right:13%;top:7px;background:radial-gradient(circle at 30% 25%,#fff,#a68aff 18%,#7352dc 48%,#25204c 75%);box-shadow:0 0 50px rgba(124,92,255,.4)}
+.error-ring{position:absolute;width:145px;height:38px;border:5px solid #4fe4ff;border-radius:50%;right:7%;top:40px;transform:rotate(-23deg);opacity:.85}
+.error-star{position:absolute;color:#7deeff;font-size:18px;animation:twinkle 2.5s ease-in-out infinite}.star-a{left:12%;top:35px}.star-b{right:18%;bottom:25px;font-size:12px;animation-delay:.8s}.star-c{left:24%;bottom:36px;font-size:13px;animation-delay:1.4s}
+@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
+.error-kicker{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.11);border-radius:999px;padding:8px 13px;color:#d9d5ff;background:rgba(124,92,255,.09);font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+.error-content h1{font:800 clamp(29px,5vw,43px)/1.15 Outfit,sans-serif;letter-spacing:-1px;margin:20px 0 12px}.error-content p{color:var(--muted);font-size:15px;line-height:1.8;max-width:490px;margin:0 auto}
+.error-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.error-actions .btn{justify-content:center;min-height:49px;cursor:pointer}
+.error-foot{position:relative;z-index:1;text-align:center;padding:20px 16px 28px;color:#737e93;font-size:12px}.error-foot a{color:#c5bcff}.error-foot a:hover{color:#fff}
+@media(max-width:480px){.error-art{height:180px}.error-planet{width:65px;height:65px;right:10%;top:0}.error-ring{width:105px;height:28px;right:4%;top:24px;border-width:4px}.error-content p{font-size:14px}.error-actions{flex-direction:column;align-items:stretch;max-width:270px;margin:26px auto 0}.error-actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<div class="error-page">
+<header class="error-nav"><div class="container"><a class="logo" href="/" aria-label="7Anime homepage"><span class="logo-mark"><i class="fa-solid fa-play" aria-hidden="true"></i></span><span>7Anime</span></a></div></header>
+<main class="error-main"><section class="error-content" aria-labelledby="error-title">
+<div class="error-art" aria-hidden="true"><i class="fa-solid fa-star error-star star-a"></i><i class="fa-solid fa-sparkles error-star star-b"></i><i class="fa-solid fa-star error-star star-c"></i><div class="error-planet"></div><div class="error-ring"></div><div class="error-number">404</div></div>
+<div class="error-kicker"><i class="fa-solid fa-compass" aria-hidden="true"></i> Lost in another dimension</div>
+<h1 id="error-title">Oops! Page not found.</h1>
+<p>The page you’re looking for may have vanished, moved, or never existed. Let’s get you back to your anime adventure.</p>
+<div class="error-actions"><a class="btn btn-main" href="/"><i class="fa-solid fa-house" aria-hidden="true"></i> Back to Home</a><button class="btn btn-ghost" type="button" onclick="history.back()"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Go Back</button></div>
+</section></main>
+<footer class="error-foot">© <span id="year"></span> <a href="/">7Anime</a> · Your next anime adventure awaits.</footer>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
