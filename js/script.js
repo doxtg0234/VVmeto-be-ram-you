@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const destination = atob(encoded);
     const radius = 50;
     const circumference = 2 * Math.PI * radius;
-    const duration = 500;
+    const duration = 20;
     const startedAt = performance.now();
 
     stopVisitProgress();
