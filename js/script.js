@@ -230,11 +230,11 @@ document.addEventListener('DOMContentLoaded', function(){
     event.preventDefault();
     event.stopImmediatePropagation();
 
-    const encoded = 'L2FwaQ==';
+    const encoded = 'L2E';
     const destination = atob(encoded);
     const radius = 50;
     const circumference = 2 * Math.PI * radius;
-    const duration = 10000;
+    const duration = 500;
     const startedAt = performance.now();
 
     stopVisitProgress();
